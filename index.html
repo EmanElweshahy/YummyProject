@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/Style.css">
+</head>
+<body class="bg-black ">
+
+    <div class="loading position-fixed top-0 start-0  w-100 h-100 bg-black text-white justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+    
+    <nav class="min-vh-100 d-flex position-fixed top-0 " > 
+        <div id="Hidden-nav" class="bg-black text-white px-4 py-3 d-flex flex-column justify-content-between d-none">
+           <div class="links">
+            <ul class="list-unstyled">
+                <li id="SearchSection" class="py-2">Search</li>
+                <li id="CategoriesSection" class="py-2">Categories</li>
+                <li id="AreaSection" class="py-2">Area</li>
+                <li id="IngredientsSection" class="py-2">Ingredients</li>
+                <li id="ContactUsSection" class="py-2">Contact Us</li>
+            </ul>
+           </div>
+           <div class="nav-footer">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <p>Copyright Â© 2023 All Rights
+                <br> Reserved.</p>
+           </div>
+        </div>
+
+        <div class="bg-light d-flex flex-column justify-content-between py-3 px-2 text-center">
+            <a href="index.html"><img class="logo" src="Photo/logo.png"></a>
+            <i id="Open-Close" class="fa-solid fs-2 fa-bars"></i>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container w-75" id="searchContainer">
+        <div class="row py-5 g-4 " >
+        </div>
+    </div>
+
+    <div class="min-vh-100 position-relative ">
+
+        <div class="container">
+            <div class="row py-5 g-4 " id="rowData">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
