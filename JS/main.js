@@ -134,6 +134,7 @@ async function getCategoryMeals(Categ){
 }
 //-------------------------Details---------------------------------------
 async function getMealsDetails(theID){
+    searchContainer.classList.add("d-none");
     closeFun();
     let https = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${theID}`);
     let response = await https.json();
