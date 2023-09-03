@@ -1,12 +1,5 @@
 /// <reference types="../@types/jquery" />
 
-// const menuBar=document.getElementById("Open-Close");
-// const HiddenNav=document.getElementById("Hidden-nav");
-// const SearchSection= document.getElementById("SearchSection");
-// const CategoriesSection= document.getElementById("CategoriesSection");
-// const AreaSection= document.getElementById("AreaSection");
-// const IngredientsSection= document.getElementById("IngredientsSection");
-// const ContactUsSection= document.getElementById("ContactUsSection");
 const rowData=document.getElementById("rowData");
 
 //------------------------------------------------------------
@@ -473,32 +466,43 @@ async function searchByFName(FLetter){
     console.log(response.meals)
     Display(response)
 }
-
-
 //-------------------------------------------------------------
-
-
-$('#SearchSection').on('click',function(){searchInputs();});
+$('#SearchSection').on('click',function(){
+    searchContainer.classList.remove("d-none");
+    searchInputs();
+});
 
 // SearchSection.addEventListener('click', function(){console.log("HI Search")})
 
-$('#CategoriesSection').on('click',function(){getCategories();})
+$('#CategoriesSection').on('click',function(){
+    searchContainer.classList.add("d-none");
+    
+    getCategories();})
 // CategoriesSection.addEventListener('click', function(){
 //     closeFun();
 //     getCategories();
 // })
 
-$('#AreaSection').on('click',function(){ getArea();})
+$('#AreaSection').on('click',function(){ 
+    searchContainer.classList.add("d-none");
+    
+    getArea();})
 // AreaSection.addEventListener('click', function(){
 //     closeFun(); 
 //     getArea();
 // })
 
-$('#IngredientsSection').on('click',function(){  getIngredients();})
+$('#IngredientsSection').on('click',function(){  
+    searchContainer.classList.add("d-none");
+    
+    getIngredients();})
 // IngredientsSection.addEventListener('click', function(){
 //     closeFun();
 //     getIngredients();
 // })
 
-$('#ContactUsSection').on('click',function(){formInputs()});
+$('#ContactUsSection').on('click',function(){
+    searchContainer.classList.add("d-none");
+    
+    formInputs()});
 // ContactUsSection.addEventListener('click', function(){console.log("HI ContactUs")})
